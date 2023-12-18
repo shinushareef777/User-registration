@@ -22,16 +22,16 @@ Before running the application, ensure you have the following installed:
    ```
    Access the application:
 
-Open your web browser and go to http://0.0.0.0:8000/).
+Open your web browser and go to http://0.0.0.0:8000/.
 
 Running the App (Subsequent Times)
 Once you have built the images for the first time, you can run the app in the future using:
 
- ```bash
-docker-compose up
-```
+   ```bash
+   docker-compose up
+   ```
 To stop the app
- ```bash
-docker-compose down
-```
+   ```bash
+   docker-compose down
+   ```
 
