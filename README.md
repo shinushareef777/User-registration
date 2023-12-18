@@ -16,7 +16,7 @@ Before running the application, ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone github.com/shinushareef777/User-registration/tree/master)
+   git clone github.com/shinushareef777/User-registration/tree/master
    cd user-registration
    docker-compose up --build
    ```
