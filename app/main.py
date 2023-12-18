@@ -43,7 +43,6 @@ def create_user(
         db.refresh(new_user)
 
         if profile_pic:
-
             allowed_content_types = ["image/jpeg", "image/png"]
             if profile_pic.content_type not in allowed_content_types:
                 raise HTTPException(status_code=400, detail="Invalid file type")
@@ -75,10 +74,6 @@ def get_user(id: int, db: Session = Depends(get_db)):
             raise HTTPException(
                 status_code=status.HTTP_404_NOT_FOUND, detail="User not found"
             )
-        
-        profile_pics_collection = mongodb_db["profile_pics"]
-        result = profile_pics_collection.find({"user_id": user.id})
-
         
         return schemas.UserResponse(
             id=user.id,
